@@ -10,6 +10,7 @@ let scoreEl = document.getElementById("score-el")
 let messageEl = document.getElementById("message-el")
 let cardsEl = document.getElementById("cards-el")
 let sumEl = document.getElementById("sum-el")
+let drawBtn = document.getElementById("draw-btn")
 let creditsEl = document.getElementById("credits-el")
 
 // random card generator
@@ -38,17 +39,21 @@ function playGame() {
     scoreEl.textContent = "Score: " + score
     sumEl.textContent = "Sum: " + sum
     creditsEl.textContent = "Credits: $" + credits
+    drawBtn.textContent = "DRAW ($20)"
     
     //core game logic
     if (sum < 21) {
         message = "Do you want to draw a new card?"
-    } else if (sum === 21) {
-        message = "Blackjack! +$100 Reward"
-        credits += 100
-        score += 1
-        scoreEl.textContent = "Score: " + score
     } else {
+        if(sum === 21) {
+            message = "Blackjack! +$100 Reward"
+            credits += 100
+            score += 1
+            scoreEl.textContent = "Score: " + score
+        }
         message = "Give it another shot!"
+        drawBtn.textContent = "NEW GAME"
+        credits += 20
         cards = [randomCard()]
         sum = 0
     }
