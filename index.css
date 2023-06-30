@@ -37,7 +37,7 @@ div {
 #credits-el {
     font-family: monospace; 
     font-size: xx-large;
-    color: rgb(20, 149, 20);
+    color: rgb(0, 163, 0);
 }
 
 p {
@@ -47,7 +47,6 @@ p {
 
 button {
     padding: 10px;
-    color: darkgreen;
     width: 150px;
     background: silver;
     padding-top: 10px;
@@ -58,4 +57,15 @@ button {
     margin-bottom: 2px;
     margin-top: 2px;
     font-size: larger;
+    transition-duration: 0.2s;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+button:active {
+    background-color: darkgreen;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
