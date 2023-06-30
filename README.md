@@ -1,5 +1,5 @@
 # blackjack-remix
-My twist on the classic game of Blackjack
+My twist on the classic game of Blackjack  
 See how many games of Blackjack Remix you can win and compete with your friends!
 
 Instructions:  
