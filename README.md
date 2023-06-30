@@ -2,7 +2,7 @@
 My twist on the classic game of Blackjack
 See how many games of Blackjack Remix you can win and compete with your friends!
 
-Instructions:
+Instructions:  
 • Each play allows you to either draw a new card or pass (reshuffle the cards)  
 
 • Win by getting a sum of 21  
